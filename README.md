@@ -5,4 +5,6 @@ Cuckoo sandboxの自動ビルドスクリプト
 - Ubuntu 18.04
 
 ## Install
+```
 sudo sh InstallHost.run
+```
