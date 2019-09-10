@@ -30,7 +30,7 @@ sudo -S chgrp pcap /usr/sbin/tcpdump
 sudo -S setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 
 sudo -S apt-get install libcap2-bin -y
-sudo -S pip install m2crypto==0.24.0
+sudo -S pip2 install m2crypto==0.24.0
 
 ## Install guacd
 sudo -S apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd -y
@@ -41,6 +41,6 @@ sudo -S apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 
 sudo -S usermod -a -G vboxusers $USER
 
 ## Install Cuckoo
-sudo -S pip install -U pip setuptools
-sudo -S pip install -U cuckoo
+sudo -S pip2 install -U pip2 setuptools
+sudo -S pip2 install -U cuckoo
 
