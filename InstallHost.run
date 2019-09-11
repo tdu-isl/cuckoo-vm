@@ -1,46 +1,46 @@
 #!/bin/bash
 
 # Package Update
-sudo -S apt-get update -y
-# sudo -S apt-get upgrade
+sudo apt-get update -y
+# sudo apt-get upgrade
 
 # Requirements
 
 ## Installing Python libraries
-sudo -S apt-get install python python-pip python-dev libffi-dev libssl-dev -y
-sudo -S apt-get install python-virtualenv python-setuptools -y
-sudo -S apt-get install libjpeg-dev zlib1g-dev swig -y
+sudo apt-get install python python-pip python-dev libffi-dev libssl-dev -y
+sudo apt-get install python-virtualenv python-setuptools -y
+sudo apt-get install libjpeg-dev zlib1g-dev swig -y
 
 ## Use Django-based Web Interface
-sudo -S apt-get install mongodb -y
+sudo apt-get install mongodb -y
 
 ## PostgreSQL
-sudo -S apt-get install postgresql libpq-dev -y
+sudo apt-get install postgresql libpq-dev -y
 
 ## Virtualbox
-sudo -S apt-get install virtualbox virtualbox-ext-pack -y
+sudo apt-get install virtualbox virtualbox-ext-pack -y
 
 ## Install tcpdump
-sudo -S apt-get install tcpdump apparmor-utils -y
-sudo -S aa-disable /usr/sbin/tcpdump
+sudo apt-get install tcpdump apparmor-utils -y
+sudo aa-disable /usr/sbin/tcpdump
 
-sudo -S groupadd pcap
-sudo -S usermod -a -G pcap cuckoo
-sudo -S chgrp pcap /usr/sbin/tcpdump
-sudo -S setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
+sudo groupadd pcap
+sudo usermod -a -G pcap cuckoo
+sudo chgrp pcap /usr/sbin/tcpdump
+sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 
-sudo -S apt-get install libcap2-bin -y
-sudo -S pip2 install m2crypto==0.24.0
+sudo apt-get install libcap2-bin -y
+sudo pip2 install m2crypto==0.24.0
 
 ## Install guacd
-sudo -S apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd -y
+sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd -y
 
 # Installing Cuckoo
 
 ## add groups
-sudo -S usermod -a -G vboxusers $USER
+sudo usermod -a -G vboxusers $USER
 
 ## Install Cuckoo
-sudo -S pip2 install -U pip2 setuptools
-sudo -S pip2 install -U cuckoo
+sudo pip2 install -U pip2 setuptools
+sudo pip2 install -U cuckoo
 
