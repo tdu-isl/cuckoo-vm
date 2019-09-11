@@ -14,4 +14,6 @@ Vagrant.configure("2") do |config|
   config.ssh.sudo_command = ''
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  config.vm.provision :shell, :path => "./setup_win7.ps1"
 end
