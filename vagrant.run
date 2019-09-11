@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Install vagrant
+sudo apt install vagrant -y
+# Requirements
+sudo gem install winrm
+sudo gem install winrm-elevated
+#set-up
+sudo vagrant up
