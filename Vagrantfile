@@ -13,7 +13,9 @@ Vagrant.configure("2") do |config|
   config.ssh.shell = 'sh -l'
   config.ssh.sudo_command = ''
 
+  # Folder share
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
+  # Run setup PowerShell
   config.vm.provision :shell, :path => "./setup_win7.ps1"
 end
