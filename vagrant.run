@@ -3,9 +3,9 @@
 # Install vagrant
 apt install vagrant -y
 # ubuntuが最小構成だった場合はrubyがないので要インストール
-# sudo apt install ruby -y
+# apt install ruby -y
 # Requirements
-sudo gem install winrm
-sudo gem install winrm-elevated
+gem install winrm
+gem install winrm-elevated
 #set-up
 vagrant up
