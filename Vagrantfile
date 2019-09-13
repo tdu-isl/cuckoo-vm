@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "datacastle/windows7"
   config.vm.box_version = "1.0"
   config.vm.guest = "windows7"
-  config.ssh.username = "vagrant"
+  config.ssh.username = "cuckoo1"
   config.ssh.password = "vagrant"
   config.ssh.insert_key = false
   config.ssh.shell = 'sh -l'
