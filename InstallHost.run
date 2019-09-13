@@ -48,3 +48,4 @@ sudo pip2 install -U cuckoo
 cuckoo -d
 
 # cp conf
+cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
