@@ -4,8 +4,8 @@ netsh advfirewall set allprofiles state off
 
 # Install Python2.7
 echo "[+] Install Python27"
-mv "C:\vagrant\py27.msi" "C:\py27.msi"
-msiexec.exe /i "C:\py27.msi" /passive /norestart
+mv C:\vagrant\py27.msi C:\Users\vagrant\Downloads
+Start-Process msiexec.exe -Wait '/i "C:\Users\vagrant\Downloads\py27.msi" /passive /norestart'
 
 ## Path
 $env:Path += ";C:\Python27"
@@ -13,13 +13,14 @@ $env:Path += ";C:\Python27"
 
 # Install PythonPIL
 echo "[+] Download PythonPIL"
-python -m pip install pillow
+C:\Python27\python -m pip install pillow
 
 # Disable UAC
 echo "[+] Disable UAC"
 New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force
 
 # Enable Auto-login & Remote-RPC
+echo "[+] Enable Auto-login & Remote-RPC"
 reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultUserName /d /t REG_SZ /f
 reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultPassword /d /t REG_SZ /f
 reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v AutoAdminLogon /d 1 /t REG_SZ /f
