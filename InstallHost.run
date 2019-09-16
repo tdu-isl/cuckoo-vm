@@ -47,6 +47,9 @@ sudo pip2 install -U cuckoo
 # debug cuckoo
 cuckoo -d
 
+# copy agent.py
+cp ~/.cuckoo/agent/agent.py .
+
 # install→vagrant up→execute powershell
 
 # cp conf
