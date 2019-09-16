@@ -44,3 +44,10 @@ sudo usermod -a -G vboxusers $USER
 sudo pip2 install -U pip2 setuptools
 sudo pip2 install -U cuckoo
 
+# debug cuckoo
+cuckoo -d
+
+# install→vagrant up→execute powershell
+
+# cp conf
+cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
