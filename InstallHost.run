@@ -50,4 +50,4 @@ cuckoo -d
 # install→vagrant up→execute powershell
 
 # cp conf
-cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
+# cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 

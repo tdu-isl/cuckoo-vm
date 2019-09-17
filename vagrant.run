@@ -9,3 +9,6 @@ gem install winrm
 gem install winrm-elevated
 #set-up
 vagrant up
+
+# get shanpshot
+vagrant snapshot save origin-win7
