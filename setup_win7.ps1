@@ -2,6 +2,10 @@
 echo "[+] Firewall down"
 netsh advfirewall set allprofiles state off
 
+# Disable Windows-Update
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update" /v "AUOptions" /t REG_DWORD /d 1 /f
+NET STOP WUAUSERV
+
 # Install Python2.7
 echo "[+] Install Python27"
 mv C:\vagrant\py27.msi C:\Users\vagrant\Downloads
