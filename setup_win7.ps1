@@ -2,6 +2,10 @@
 echo "[+] Firewall down"
 netsh advfirewall set allprofiles state off
 
+# Disable Windows-Update
+REG ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update" /v "AUOptions" /t REG_DWORD /d 1 /f
+NET STOP WUAUSERV
+
 # Install Python2.7
 echo "[+] Install Python27"
 mv C:\vagrant\py27.msi C:\Users\vagrant\Downloads
@@ -26,6 +30,10 @@ reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultP
 reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v AutoAdminLogon /d 1 /t REG_SZ /f
 reg add "hklm\system\CurrentControlSet\Control\TerminalServer" /v AllowRemoteRPC /d 0x01 /t REG_DWORD /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v LocalAccountTokenFilterPolicy /d 0x01 /t REG_DWORD /f
+
+# Set agent.py
+echo "[+] Move agent.py"
+mv C:\vagrant\agent.py 'C:\Users\cuckoo1\AppData\Roaming\Microsoft\Windows\Start Menu\Programs¥Startup'
 
 # Change Default GW
 echo "[+] Change IP ==> 192.168.56.1 mask 255.255.255.0 gw 192.168.56.1"

@@ -7,6 +7,10 @@ apt install vagrant -y
 # Requirements
 gem install winrm
 gem install winrm-elevated
+
+# Download Python2.7.msi
+wget -O "py27.msi" "https://www.python.org/ftp/python/2.7.16/python-2.7.16.msi"
+
 #set-up
 vagrant up
 
