@@ -31,6 +31,10 @@ reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v AutoAdmi
 reg add "hklm\system\CurrentControlSet\Control\TerminalServer" /v AllowRemoteRPC /d 0x01 /t REG_DWORD /f
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v LocalAccountTokenFilterPolicy /d 0x01 /t REG_DWORD /f
 
+# Set agent.py
+echo "[+] Move agent.py"
+mv C:\vagrant\agent.py 'C:\Users\cuckoo1\AppData\Roaming\Microsoft\Windows\Start Menu\Programs¥Startup'
+
 # Change Default GW
 echo "[+] Change IP ==> 192.168.56.1 mask 255.255.255.0 gw 192.168.56.1"
 netsh interface ipv4 set address "Local Area Connection" static 192.168.56.101 255.255.255.0 192.168.56.1
