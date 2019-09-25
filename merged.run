@@ -53,10 +53,6 @@ cp ~/.cuckoo/agent/agent.py .
 
 # install→vagrant up→execute powershell
 
-# cp conf
-cp -t .cuckoo/conf ~/デスクトップ/cuckoo-vm-develop/reporting.conf ~/デスクトップ/cuckoo-vm-develop/virtualbox.conf 
-
-
 #!/bin/bash
 
 # Install vagrant
@@ -76,3 +72,7 @@ vagrant up
 
 #snapshot 
 vagrant snapshot save origin-win7
+
+# cp conf
+cp -f  ~/デスクトップ/cuckoo-vm-feature-boot/reporting.conf .cuckoo/conf
+cp -f  ~/デスクトップ/cuckoo-vm-feature-boot/virtualbox.conf .cuckoo/conf
