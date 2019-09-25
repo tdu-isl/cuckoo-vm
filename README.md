@@ -24,6 +24,10 @@ Cuckoo sandboxの自動ビルドスクリプト
        ファイル名はcuckoo-vmにすること
 1. cucko cuckoo webを起動する
 
+        cuckoo-web起動時にエラーが出たら以下のコマンド両方使ってください。
+        cp -f  ~/デスクトップ/cuckoo-vm/reporting.conf .cuckoo/conf
+        cp -f  ~/デスクトップ/cuckoo-vm/virtualbox.conf .cuckoo/conf
+
 ## 
 
 ## Install
