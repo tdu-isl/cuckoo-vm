@@ -30,7 +30,6 @@ Cuckoo sandboxの自動ビルドスクリプト
         cp -f  ~/デスクトップ/cuckoo-vm/reporting.conf .cuckoo/conf
         cp -f  ~/デスクトップ/cuckoo-vm/virtualbox.conf .cuckoo/conf
 
-## 
 
 ## Install
 ```
