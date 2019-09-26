@@ -35,6 +35,10 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\S
 echo "[+] Move agent.py"
 mv C:\vagrant\agent.py 'C:\Users\vagrant\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup'
 
+# Change Default GW
+echo "[+] Change IP ==> 192.168.56.1 mask 255.255.255.0 gw #192.168.56.1"
+netsh interface ipv4 set address "Local Area Connection" static 192.168.56.101 255.255.255.0 192.168.56.1
+
 # Restart
 echo "[+] Restart!"
 Restart-Computer
