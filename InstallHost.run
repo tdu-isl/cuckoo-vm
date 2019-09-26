@@ -7,7 +7,7 @@ sudo apt-get update -y
 # Requirements
 
 ## Virtualbox
-sudo apt-get install virtualbox  -y
+sudo apt-get install virtualbox -y
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install virtualbox-ext-pack
 
 ## Installing Python libraries
@@ -19,7 +19,7 @@ sudo apt-get install libjpeg-dev zlib1g-dev swig -y
 sudo apt-get install mongodb -y
 
 ## PostgreSQL
-sudo apt-get install postgresql libpq-dev -y
+## sudo apt-get install postgresql libpq-dev -y
 
 ## Install tcpdump
 sudo apt-get install tcpdump apparmor-utils -y
@@ -53,5 +53,29 @@ cp ~/.cuckoo/agent/agent.py .
 
 # install→vagrant up→execute powershell
 
+#!/bin/bash
+
+# Install vagrant
+sudo apt install vagrant -y
+# ubuntuが最小構成だった場合はrubyがないので要インストール
+sudo apt install ruby -y
+# Requirements
+sudo gem install winrm
+sudo gem install winrm-elevated
+
+# Download Python2.7.msi
+wget -O "py27.msi" "https://www.python.org/ftp/python/2.7.16/python-2.7.16.msi"
+
+#set-up
+vagrant up
+
+
+#snapshot 
+vagrant snapshot save origin-win7
+
+#edit hierarchy
+cd 
+
 # cp conf
-# cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
+cp -f  ~/デスクトップ/cuckoo-vm/reporting.conf .cuckoo/conf
+cp -f  ~/デスクトップ/cuckoo-vm/virtualbox.conf .cuckoo/conf
