@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Install vagrant
+apt install vagrant -y
+# ubuntuが最小構成だった場合はrubyがないので要インストール
+# apt install ruby -y
+# Requirements
+gem install winrm
+gem install winrm-elevated
+
+# Download Python2.7.msi
+wget -O "py27.msi" "https://www.python.org/ftp/python/2.7.16/python-2.7.16.msi"
+
+#set-up
+vagrant up
