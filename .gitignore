@@ -9,9 +9,6 @@
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
-# folder
-unused
-
 # Session
 Session.vim
 Sessionx.vim
