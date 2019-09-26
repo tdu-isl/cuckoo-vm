@@ -6,10 +6,6 @@ sudo apt-get update -y
 
 # Requirements
 
-## Virtualbox
-sudo apt-get install virtualbox  -y
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install virtualbox-ext-pack
-
 ## Installing Python libraries
 sudo apt-get install python python-pip python-dev libffi-dev libssl-dev -y
 sudo apt-get install python-virtualenv python-setuptools -y
@@ -20,6 +16,9 @@ sudo apt-get install mongodb -y
 
 ## PostgreSQL
 sudo apt-get install postgresql libpq-dev -y
+
+## Virtualbox
+sudo apt-get install virtualbox virtualbox-ext-pack -y
 
 ## Install tcpdump
 sudo apt-get install tcpdump apparmor-utils -y
@@ -54,4 +53,4 @@ cp ~/.cuckoo/agent/agent.py .
 # install→vagrant up→execute powershell
 
 # cp conf
-# cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
+cp -t .cuckoo/conf/reporting.conf .cuckoo/conf/virtualbox.conf 
