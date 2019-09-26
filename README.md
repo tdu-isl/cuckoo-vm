@@ -21,7 +21,8 @@ Cuckoo sandboxの自動ビルドスクリプト
 ~~そうしないと"VT-x is not avaliable"っていうエラーが出てきます．~~
 1. ubuntu上でcloneしたmerged.runを実行する。 
 
-       cloneしたファイル名はcuckoo-vmにしてください
+       cloneしたファイル名はcuckoo-vmにしてください。
+       merged.runが実行できない場合はフォルダの名変更後、再起動してください。
 1. cucko cuckoo webを起動する
 
         cuckoo-web起動時にエラーが出たら以下のコマンド両方使ってください。
