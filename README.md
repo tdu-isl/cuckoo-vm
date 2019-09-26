@@ -18,10 +18,10 @@ Cuckoo sandboxの自動ビルドスクリプト
 
         もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ(VirtualBox VMsなど)にて、以下のようにVBoxManageを実行すると解決することがあります。
         VBoxManage modifyvm YourVmName --nested-hw-virt on
-1. ubuntu上でcloneしたInstalledHost.runを実行する。 
+1. ubuntu上でcloneしたInstallHost.runを実行する。 
 
        cloneしたファイル名はcuckoo-vmにしてください。
-       InstalledHost.runが実行できない場合はフォルダの名変更後、再起動してください。
+       InstallHost.runが実行できない場合はフォルダの名変更後、再起動してください。
 1. cucko cuckoo webを起動する
 
         cuckoo-web起動時にエラーが出たら以下のコマンド両方使ってください。
@@ -34,5 +34,5 @@ Cuckoo sandboxの自動ビルドスクリプト
 
 ## Install
 ```
-sudo sh  InstalledHost.run
+sudo sh  InstallHost.run
 ```
