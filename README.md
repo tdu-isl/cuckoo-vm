@@ -18,14 +18,15 @@ Cuckoo sandboxの自動ビルドスクリプト
 
         もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ(VirtualBox VMsなど)にて、以下のようにVBoxManageを実行すると解決することがあります。
         VBoxManage modifyvm YourVmName --nested-hw-virt on
-~~そうしないと"VT-x is not avaliable"っていうエラーが出てきます．~~
-1. ubuntu上でcloneしたmerged.runを実行する。 
+1. ubuntu上でcloneしたInstalledHost.runを実行する。 
 
        cloneしたファイル名はcuckoo-vmにしてください。
-       merged.runが実行できない場合はフォルダの名変更後、再起動してください。
+       InstalledHost.runが実行できない場合はフォルダの名変更後、再起動してください。
 1. cucko cuckoo webを起動する
 
         cuckoo-web起動時にエラーが出たら以下のコマンド両方使ってください。
+        (下ではcloneした場所をデスクトップ直下を想定しています。  
+        他の階層にある方は、InstallHost.runの下２行にある部分のpathを編集してください。)
         cp -f  ~/デスクトップ/cuckoo-vm/reporting.conf .cuckoo/conf
         cp -f  ~/デスクトップ/cuckoo-vm/virtualbox.conf .cuckoo/conf
 
@@ -33,5 +34,5 @@ Cuckoo sandboxの自動ビルドスクリプト
 
 ## Install
 ```
-sudo sh merged.run
+sudo sh  InstalledHost.run
 ```
