@@ -15,8 +15,7 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 
 ## Requirement
 
-- Ubuntu 18.04
-- virtualbox 6.0
+- VirtualBox 6.0
 
 ## Preparation
 
