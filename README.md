@@ -25,7 +25,7 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ("VirtualBox VMs"など)にて、以下のようにVBoxManageを実行すると解決することがあります。
 
 ```sh
-VBoxManage modifyvm <your-vmname> --nested-hw-virt on
+$ VBoxManage modifyvm <your-vmname> --nested-hw-virt on
 ```
 
 3. VM上にこのリポジトリをcloneする(ディレクトリ名は"cuckoo-vm"から変更しないこと)
@@ -38,6 +38,6 @@ $ sh InstallHost.run
 5. 4の終了後にcucko, cuckoo webをそれぞれ起動する
 
 ```sh
-cuckoo
-cuckoo web
+$ cuckoo
+$ cuckoo web
 ```
