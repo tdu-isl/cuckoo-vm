@@ -20,9 +20,12 @@ sudo apt-get install mongodb -y
 
 ## PostgreSQL
 ## sudo apt-get install postgresql libpq-dev -y
+<<<<<<< HEAD
 
 ## Virtualbox
 sudo apt-get install virtualbox virtualbox-ext-pack -y
+=======
+>>>>>>> ed72d6faa30b904d1f4a38ca5c8cbc001ccc67ae
 
 ## Install tcpdump
 sudo apt-get install tcpdump apparmor-utils -y
@@ -76,11 +79,10 @@ vagrant up
 #snapshot 
 vagrant snapshot save origin-win7
 
-#edit hierarchy
-cd 
+# change hierarchy
+cd ..
 
 # cp conf
-
-cp -f  ~/デスクトップ/cuckoo-vm/reporting.conf .cuckoo/conf
-cp -f  ~/デスクトップ/cuckoo-vm/virtualbox.conf .cuckoo/conf
+cp -f cuckoo-vm/reporting.conf ~/.cuckoo/conf
+cp -f cuckoo-vm/virtualbox.conf ~/.cuckoo/conf
 
