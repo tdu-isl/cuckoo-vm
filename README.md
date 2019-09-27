@@ -41,3 +41,16 @@ $ sh InstallHost.run
 $ cuckoo
 $ cuckoo web
 ```
+
+## Licence
+
+[MIT](https://github.com/tdu-isl/cuckoo-vm/blob/develop/LICENSE)
+
+## Author
+
+- [appBana](https://github.com/howmuch515)
+- [Syuukakou](https://github.com/Syuukakou)
+- [ro-iida](https://github.com/rotten3156)
+- [m-book](https://github.com/m-book)
+- [waricopy](https://github.com/waricopy)
+- [yuk1h1raA](https://github.com/yuk1h1ra)
