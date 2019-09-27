@@ -19,7 +19,7 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 
 ## Install
 
-1. VirtualBoxもしくはVMwar ProにUbuntu18.04のVMを作成する
+1. VirtualBoxもしくはVMware ProにUbuntu18.04のVMを作成する
 2. 作成したVMの設定から「ネスデッド VT-x/AMD-V」を有効化する
 
 もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ("VirtualBox VMs"など)にて、以下のようにVBoxManageを実行すると解決することがあります。
