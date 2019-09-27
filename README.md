@@ -7,7 +7,7 @@
                                                        
 ```
 
-Cuckoo sandboxの自動ビルドスクリプト
+Cuckoo Sandboxの自動ビルドスクリプトです。
 
 ## Requirement
 - Ubuntu 18.04
