@@ -32,7 +32,7 @@ VBoxManage modifyvm <your-vmname> --nested-hw-virt on
 4. cloneしたリポジトリ内のInstallHost.runを起動する
 
 ```sh
-sudo sh InstallHost.run
+$ sh InstallHost.run
 ```
 
 5. 4の終了後にcucko, cuckoo webをそれぞれ起動する
