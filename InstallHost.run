@@ -77,6 +77,6 @@ vagrant snapshot save origin-win7
 cd ..
 
 # cp conf
-cp -f cuckoo-vm-feature-boot/reporting.conf ~/.cuckoo/conf
-cp -f cuckoo-vm-feature-boot/virtualbox.conf ~/.cuckoo/conf
+cp -f cuckoo-vm/reporting.conf ~/.cuckoo/conf
+cp -f cuckoo-vm/virtualbox.conf ~/.cuckoo/conf
 
