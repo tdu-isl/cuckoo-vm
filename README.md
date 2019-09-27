@@ -17,21 +17,27 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 
 - VirtualBox 6.0
 
-## Preparation
+## Install
 
-1.  VMware Pro または Virtualbox に建てられた Ubuntu の「ネスデッド VT-x/AMD-V」を有効化する。
+1. VirtualBoxもしくはVMwar ProにUbuntu18.04のVMを作成する
+2. 作成したVMの設定から「ネスデッド VT-x/AMD-V」を有効化する
 
-        もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ(VirtualBox VMsなど)にて、以下のようにVBoxManageを実行すると解決することがあります。
-        VBoxManage modifyvm YourVmName --nested-hw-virt on
+もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ("VirtualBox VMs"など)にて、以下のようにVBoxManageを実行すると解決することがあります。
 
-1.  Ubuntu 上で clone した InstallHost.run を実行する。  
-     _ clone したファイル名は cuckoo-vm にしてください。  
-     _ InstallHost.run が実行できない場合はファイル名変更後、再起動してください。
+```sh
+VBoxManage modifyvm <your-vmname> --nested-hw-virt on
+```
 
+3. VM上にこのリポジトリをcloneする(ディレクトリ名は"cuckoo-vm"から変更しないこと)
+4. cloneしたリポジトリ内のInstallHost.runを起動する
 
-        sudo sh  InstallHost.run
+```sh
+sudo sh InstallHost.run
+```
 
-1.  cucko cuckoo web を起動する
+5. 4の終了後にcucko, cuckoo webをそれぞれ起動する
 
-        cuckoo
-        cuckoo web
+```sh
+cuckoo
+cuckoo web
+```
