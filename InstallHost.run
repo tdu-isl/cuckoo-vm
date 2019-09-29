@@ -2,7 +2,6 @@
 
 # Package Update
 sudo apt-get update -y
-# sudo apt-get upgrade
 
 # Requirements
 
@@ -17,9 +16,6 @@ sudo apt-get install libjpeg-dev zlib1g-dev swig -y
 
 ## Use Django-based Web Interface
 sudo apt-get install mongodb -y
-
-## PostgreSQL
-## sudo apt-get install postgresql libpq-dev -y
 
 ## Install tcpdump
 sudo apt-get install tcpdump apparmor-utils -y
@@ -51,9 +47,6 @@ cuckoo -d
 # copy agent.py
 cp ~/.cuckoo/agent/agent.py .
 
-# install→vagrant up→execute powershell
-
-#!/bin/bash
 
 # Install vagrant
 sudo apt install vagrant -y
