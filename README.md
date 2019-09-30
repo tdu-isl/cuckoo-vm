@@ -17,17 +17,14 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 
 - VirtualBox 6.0
 
+### Note
+現在、VirtualBoxの「ネステッド VT-x/AMD-V」オプションはAMD製のCPUを中心とした一部のCPUのみサポートされています。
+サポートされていないCPUをお使いの場合は、ホストマシンに直接Ubuntu18.04をインストールし下記インストール手順の3番目からインストール作業を進めてください。
+
 ## Install
 
-1. VirtualBoxもしくはVMware ProにUbuntu18.04のVMを作成する
-2. 作成したVMの設定から「ネスデッド VT-x/AMD-V」を有効化する
-
-もし上記が有効化できない場合は、VirtualBox VMの保存フォルダ("VirtualBox VMs"など)にて、以下のようにVBoxManageを実行すると解決することがあります。
-
-```sh
-$ VBoxManage modifyvm <your-vmname> --nested-hw-virt on
-```
-
+1. VirtualBoxにUbuntu18.04のVMを作成する
+2. 作成したVMの設定から「ネステッド VT-x/AMD-V」を有効化する
 3. VM上にこのリポジトリをcloneする(ディレクトリ名は"cuckoo-vm"から変更しないこと)
 4. cloneしたリポジトリ内のInstallHost.runを起動する
 
