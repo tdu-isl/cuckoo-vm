@@ -68,6 +68,9 @@ vagrant snapshot save origin-win7
 ## Wireshark
 sudo apt install wireshark -y
 
+## Volatility
+sudo apt install volatility -y
+
 # change hierarchy
 cd ..
 
