@@ -1,10 +1,10 @@
 #!/bin/sh
 
-## Wireshark
+# Wireshark
 sudo apt install wireshark -y
 
-## Volatility
+# Volatility
 sudo apt install volatility -y
 
-## jq
+# jq
 sudo apt install jq -y

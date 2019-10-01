@@ -37,3 +37,13 @@ sudo usermod -a -G vboxusers $USER
 ## Install Cuckoo
 sudo pip2 install -U pip2 setuptools
 sudo pip2 install -U cuckoo
+
+# Install Vagrant
+sudo apt install vagrant -y
+
+## ubuntuが最小構成だった場合はrubyがないので要インストール
+sudo apt install ruby -y
+
+## Requirements
+sudo gem install winrm
+sudo gem install winrm-elevated
