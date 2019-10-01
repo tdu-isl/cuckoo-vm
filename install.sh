@@ -65,14 +65,7 @@ vagrant up
 vagrant snapshot save origin-win7
 
 # install log analysis tools
-## Wireshark
-sudo apt install wireshark -y
-
-## Volatility
-sudo apt install volatility -y
-
-## jq
-sudo apt install jq -y
+sh install_log_analysis_tools.sh
 
 # change hierarchy
 cd ..
