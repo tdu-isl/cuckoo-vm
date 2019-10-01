@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Wireshark
-sudo apt install wireshark -y
+sudo DEBIAN_FRONTEND=noninteractive apt install wireshark -y
 
 # Volatility
 sudo apt install volatility -y
