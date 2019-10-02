@@ -16,5 +16,5 @@ Vagrant.configure("2") do |config|
   config.ssh.sudo_command = ''
 
   # Run setup PowerShell
-  config.vm.provision :shell, :path => "./setup_win7.ps1"
+  config.vm.provision :shell, :path => "scripts/setup_win7.ps1"
 end
