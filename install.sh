@@ -11,3 +11,6 @@ sh scripts/install_log_analysis_tools.sh
 
 # Setup Cuckoo
 sh scripts/setup_cuckoo.sh
+
+# Show banner
+cat ./BANNER.txt
