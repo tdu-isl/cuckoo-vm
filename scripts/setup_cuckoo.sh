@@ -16,5 +16,5 @@ vagrant up
 vagrant snapshot save origin-win7
 
 # cp conf
-cp -f ./reporting.conf ~/.cuckoo/conf
-cp -f ./virtualbox.conf ~/.cuckoo/conf
+cp -f conf/reporting.conf ~/.cuckoo/conf
+cp -f conf/virtualbox.conf ~/.cuckoo/conf

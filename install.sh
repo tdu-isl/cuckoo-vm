@@ -4,10 +4,10 @@
 sudo apt-get update -y
 
 # Install Cuckoo
-sh install_cuckoo.sh
+sh scripts/install_cuckoo.sh
 
 # Install log analysis tools
-sh install_log_analysis_tools.sh
+sh scripts/install_log_analysis_tools.sh
 
 # Setup Cuckoo
-sh setup_cuckoo.sh
+sh scripts/setup_cuckoo.sh
