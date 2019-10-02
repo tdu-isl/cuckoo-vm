@@ -26,10 +26,10 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 1. VirtualBoxにUbuntu18.04のVMを作成する
 2. 作成したVMの設定から「ネステッド VT-x/AMD-V」を有効化する
 3. VM上にこのリポジトリをcloneする(ディレクトリ名は"cuckoo-vm"から変更しないこと)
-4. cloneしたリポジトリ内のInstallHost.runを起動する
+4. cloneしたリポジトリ内のinstall.shを起動する
 
 ```sh
-$ sh InstallHost.run
+$ sh install.sh
 ```
 
 5. 4の終了後にcucko, cuckoo webをそれぞれ起動する
