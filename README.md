@@ -38,6 +38,7 @@ $ sh install.sh
 $ cuckoo
 $ cuckoo web
 ```
+![demo](https://github.com/tdu-isl/cuckoo-vm/wiki/images/demo.gif)
 
 ## Licence
 
