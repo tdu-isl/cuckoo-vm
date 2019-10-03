@@ -39,6 +39,13 @@ $ cuckoo
 $ cuckoo web
 ```
 
+
+## demo
+<div align="center">
+<img src="https://github.com/tdu-isl/cuckoo-vm/wiki/images/demo.gif" alt="属性" title="demo">
+</div>
+
+
 ## Licence
 
 [MIT](https://github.com/tdu-isl/cuckoo-vm/blob/develop/LICENSE)
