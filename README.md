@@ -13,6 +13,12 @@ Cuckoo Sandbox の自動ビルドスクリプトです。
 Cuckoo Sandboxは有用なマルウェア動的解析ツールですが、その環境構築は煩雑です。
 VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1つ実行すれば全自動でCuckoo Sandboxの実行環境を構築します。
 
+## Demo
+
+<div align="center">
+<img src="https://github.com/tdu-isl/cuckoo-vm/wiki/images/demo.gif" alt="属性" title="demo">
+</div>
+
 ## Requirement
 
 - VirtualBox 6.0
@@ -40,10 +46,6 @@ $ cuckoo web
 ```
 
 
-## demo
-<div align="center">
-<img src="https://github.com/tdu-isl/cuckoo-vm/wiki/images/demo.gif" alt="属性" title="demo">
-</div>
 
 
 ## Licence
