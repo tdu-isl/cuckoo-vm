@@ -45,8 +45,11 @@ $ cuckoo
 $ cuckoo web
 ```
 
-
-
+## Installed Tools
+- Cuckoo Sandbox
+- Wireshark
+- Volatility
+- jq
 
 ## Licence
 
