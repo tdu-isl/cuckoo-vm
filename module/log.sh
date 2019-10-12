@@ -1,5 +1,5 @@
 #!/bin/sh
-ESC="\e["
+ESC="\033["
 ESCEND=m
 COLOR_OFF=${ESC}${ESCEND}
 
@@ -10,31 +10,29 @@ ERROR_COLOR=31
 
 color() {
     col_code=$1
-    msg=$2
-    msg_prefix=$3
-    msg_suffix=$4
+    msg=${@:4}
+    msg_prefix=$2
+    msg_suffix=$3
 
-    echo -en "${ESC}${col_code};1${ESCEND}"
-    echo "${msg_prefix} ${msg} ${msg_suffix}"
-    echo -en "${COLOR_OFF}"
+    printf "${ESC}${col_code};1${ESCEND}${msg_prefix} ${msg} ${msg_suffix}${COLOR_OFF}\n"
 }
 
-infomation() {
+information() {
     msg=$1
-    color ${INFOMATION_COLOR} ${msg} "[+]" ""
+    color ${INFOMATION_COLOR} "[+]" "" ${msg}
 }
 
 success() {
     msg=$1
-    color ${SUCCESS_COLOR} ${msg} "[*]" ""
+    color ${SUCCESS_COLOR} "[*]" "" ${msg}
 }
 
 warning() {
     msg=$1
-    color ${WARNING_COLOR} ${msg} "[-]" ""
+    color ${WARNING_COLOR} "[-]" "" ${msg}
 }
 
 error() {
     msg=$1
-    color ${ERROR_COLOR} ${msg} "[!]" ""
+    color ${ERROR_COLOR} "[!]" "" ${msg}
 }
