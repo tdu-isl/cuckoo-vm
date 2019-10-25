@@ -7,12 +7,11 @@
 
 ```
 
-This is the automatic building scripts of Cuckoo Sandbox.
-
+Cuckoo Sandbox の自動ビルドスクリプトです。
 
 ## Description
-Although Cuckoo Sandbox is a useful dynamic analysis tools of malwares, it's building is complicated.
-Cloning this repository on VM(Ubuntu), executing one script build Cuckoo Sandbox automatically.
+Cuckoo Sandboxは有用なマルウェア動的解析ツールですが、その環境構築は煩雑です。
+VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1つ実行すれば全自動でCuckoo Sandboxの実行環境を構築します。
 
 ## Demo
 
