@@ -1,5 +1,5 @@
-- [In Japanese](docs/README_JP.md)
-- [In Chinese](docs/README_CN.md)
+- [日本語版](docs/README_JP.md)
+- [中文版](docs/README_CN.md)
 
 ```
    ____ _   _  ____ _  _____   ___     __     ____  __
