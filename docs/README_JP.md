@@ -1,4 +1,5 @@
-[In English](../README.md)
+- [In English](../README.md)
+- [中文版](./README_CN.md)
 
 ```
    ____ _   _  ____ _  _____   ___     __     ____  __
