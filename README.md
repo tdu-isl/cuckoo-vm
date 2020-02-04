@@ -1,3 +1,6 @@
+- [日本語版](docs/README_JP.md)
+- [中文版](docs/README_CN.md)
+
 ```
    ____ _   _  ____ _  _____   ___     __     ____  __
   / ___| | | |/ ___| |/ / _ \ / _ \    \ \   / /  \/  |
@@ -7,11 +10,12 @@
 
 ```
 
-Cuckoo Sandbox の自動ビルドスクリプトです。
+This is the automatic building scripts of Cuckoo Sandbox.
+
 
 ## Description
-Cuckoo Sandboxは有用なマルウェア動的解析ツールですが、その環境構築は煩雑です。
-VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1つ実行すれば全自動でCuckoo Sandboxの実行環境を構築します。
+Although Cuckoo Sandbox is a useful dynamic analysis tools of malwares, it's building is complicated.
+Cloning this repository on VM(Ubuntu), executing one script build Cuckoo Sandbox automatically.
 
 ## Demo
 
@@ -24,21 +28,21 @@ VM上のUbuntuにリポジトリをクローンし、シェルスクリプト1�
 - VirtualBox 6.0
 
 ### Note
-現在、VirtualBoxの「ネステッド VT-x/AMD-V」オプションはAMD製のCPUを中心とした一部のCPUのみサポートされています。
-サポートされていないCPUをお使いの場合は、ホストマシンに直接Ubuntu18.04をインストールし下記インストール手順の3番目からインストール作業を進めてください。
+Now, VirtualBox "Nested VT-x/AMD-V" only support some CPUs, AMD CPUs.
+If you used a non-supported CPU, you would install Ubuntu 18.04 directly on the host machine and proceed with the installation from the third installation step below.
 
 ## Install
 
-1. VirtualBoxにUbuntu18.04のVMを作成する
-2. 作成したVMの設定から「ネステッド VT-x/AMD-V」を有効化する
-3. VM上にこのリポジトリをcloneする(ディレクトリ名は"cuckoo-vm"から変更しないこと)
-4. cloneしたリポジトリ内のinstall.shを起動する
+1. Build Ubuntu 18.04 on VirtualBox
+2. Enable "Nested VT-x/AMD-V" in the VM setting.
+3. Clone this repository on VM
+4. Start `install.sh` in this repository.
 
 ```sh
 $ sh install.sh
 ```
 
-5. 4の終了後にcucko, cuckoo webをそれぞれ起動する
+5. After finishing 4, wake up cuckoo, cuckoo-web.
 
 ```sh
 $ cuckoo
